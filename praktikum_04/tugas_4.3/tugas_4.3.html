@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faris Al Hasani's Profile Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            font-family: Poppins, Arial, Helvetica, sans-serif
+        }
+
+        fieldset {
+            text-align: left;
+            background-color: beige;
+            border: 1pt solid #000;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .picture{
+            margin: 0px 50px;
+            width: 20%;
+        }
+
+        .picture>img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .biodata{
+            margin: 0px 50px;
+        }
+
+        .categories{
+            margin: 0px 50px;
+        }
+
+        main{
+            margin: 2.5%;
+            padding: 0;
+        }
+
+        article{
+            text-align: justify;
+        }
+
+        footer{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .video{
+            width: 50%;
+        }
+
+        .video>fieldset>video{
+            width: 100%;
+        }
+
+        .foto{
+            width: 25%;
+        }
+
+        .link{
+            width: 25%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Faris Al Hasani - Profile Page</legend>
+
+        <!-- INI HEADER -->
+        <header>
+            <div class="picture">
+                <img src="/img/faris.png" alt="" style="width: 100%;">
+            </div>
+            
+            <div class="biodata" style="width: 60%;">
+                <h2>My Profile</h2>
+                Nama : Faris Al Hasani
+                <br>
+                Alamat : Gema Pesona Estate, Blok Q 15
+                <br>
+                Email : <a href="mailto:frs99faris@gmail.com">frs99faris@gmail.com</a>
+                <br>
+                Kontak :  08992023458
+            </div>
+    
+            <div class="categories" style="width: 20%; text-align: right;">
+                <h2>CATEGORIES</h2>
+                <a href="#" style="text-decoration: none"> home </a>
+                <br>
+                <a href="#" style="text-decoration: none"> profile </a>
+                <br>
+                <a href="#" style="text-decoration: none"> about me </a>
+                <br>
+                <a href="#" style="text-decoration: none"> multimedia </a>
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+        <hr>
+
+        <!-- INI MAIN -->
+        <main>
+            <article>
+                <section>
+                    Saya adalah seorang <b>Desainer Grafis “muda”</b> yang memiliki minat dan semangat tinggi untuk mengeksplorasi, mengembangkan diri, dan terus menggali ilmu yang berguna. Saya merasa sangat senang saat bisa menyelesaikan permasalahan yang ada dengan ide-ide kreatif “anak muda”.
+                </section>
+                <br>
+                <section>
+                    Saya adalah seorang <u>Desainer Grafis “muda”</u> yang memiliki minat dan semangat tinggi untuk mengeksplorasi, mengembangkan diri, dan terus menggali ilmu yang berguna. Saya merasa sangat senang saat bisa menyelesaikan permasalahan yang ada dengan ide-ide kreatif “anak muda”.
+                </section>
+                <br>
+                <section>
+                    Saya adalah seorang <i>Desainer Grafis “muda”</i> yang memiliki minat dan semangat tinggi untuk mengeksplorasi, mengembangkan diri, dan terus menggali ilmu yang berguna. Saya merasa sangat senang saat bisa menyelesaikan permasalahan yang ada dengan ide-ide kreatif “anak muda”.
+                </section>
+            </article>
+        </main>
+        <!-- MAIN END -->
+        
+        <hr>
+        
+        <!-- INI FOOTER -->
+        <footer>
+            <div class="video">
+                <fieldset>
+                    <legend>Video</legend>
+                    <video controls loop width="60%" autoplay muted>
+                        <source src="/video/video.mp4">
+                    </video>
+                </fieldset>
+            </div>
+            
+            <div class="foto">
+                <fieldset>
+                    <legend>Foto</legend>
+                    <table>
+                        <tr>
+                            <td><img src="/img/faris.png" alt="foto" style="width: 100px;"></td>
+                            <td><img src="/img/faris.png" alt="foto" style="width: 100px;"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/img/faris.png" alt="foto" style="width: 100px;"></td>
+                            <td><img src="/img/faris.png" alt="foto" style="width: 100px;"></td>
+                        </tr>
+                    </table>     
+                </fieldset>
+            </div>
+            
+            <div class="link">
+                <fieldset>
+                <legend>Attachments</legend>
+                <a href="/cv/cv.pdf" Download>
+                <img src="/img/pdf.jpg" alt="" width="13px">My CV
+                </a>
+                <br>
+                <a href="/cv/cv.pdf" Download>
+                    <img src="/img/pdf.jpg" alt="" width="13px">My CV
+                </a>
+                </fieldset>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+    </fieldset>
+</body>
+</html>

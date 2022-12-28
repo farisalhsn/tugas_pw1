@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <style>
+        .container {
+            width: 100%;
+        }
+
+        #box {
+            width: 50%;
+            height: 400px;
+            border: 1px solid black;
+            padding: 0px 5px;
+        }
+
+        #pesan {
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Box menampilkan pesan -->
+        <div id="box"></div>
+        <!-- Inputan untuk ngirim pesan -->
+        <input type="text" id="pesan">
+        <input type="button" value="kirim" onclick="chat()">
+    </div>
+
+    <script>
+        // simpan hak akses element div box ke variable chatbox
+        let chatbox = document.getElementById("box");
+        // simpan hak akses element input pesan ke variable pesan
+        let pesan = document.getElementById("pesan");
+
+        // Logic
+        function chat() {
+            // buat tag p, lalu kita simpan ke variable paragraph
+            let paragraf = document.createElement("p");
+            // nambahin tag p ke dalam id box
+            chatbox.appendChild(paragraf);
+            // isi tag p dengan inputan dari id pesan
+            paragraf.innerHTML = pesan.value
+        }
+    </script>
+</body>
+</html>

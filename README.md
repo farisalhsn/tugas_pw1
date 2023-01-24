@@ -1,2 +1,2 @@
-# tugas_pw 1
+# tugas_pw1
 Berisi Kumpulan Tugas Praktikum PW1
